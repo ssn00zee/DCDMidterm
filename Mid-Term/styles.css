@@ -1,0 +1,19 @@
+html {
+    background-color: #463CBD;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.part1 {
+    width:25px;
+    height:25px;
+    background: black;
+    border-radius: 50%;
+}
+
+.intro {
+    color: white;
+}
