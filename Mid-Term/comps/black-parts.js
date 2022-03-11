@@ -7,7 +7,8 @@ template_bpart.innerHTML = `
 
 .cont{
     display:flex; 
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .bpart {
@@ -15,7 +16,7 @@ template_bpart.innerHTML = `
     height: 50px;
     background: black;
     border-radius: 50%;
-    margin: 3rem;
+    margin: 1rem;
     flex-shrink: 0;
 }
 
