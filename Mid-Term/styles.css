@@ -97,26 +97,27 @@ body {
 /* info modal */
 
 .modal {
-display: none; /* Hidden by default */
-position: absolute; /* Stay in place */
-z-index: 1; /* Sit on top */
-left: 0;
-top: 0;
-width: 100%; /* Full width */
-height: 100%; /* Full height */
-overflow-y: scroll; /* Enable scroll if needed */
-background-color: rgb(0,0,0); /* Fallback color */
-background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
   
 /* Modal Content/Box */
 .modal-content {
-background-color: #2F2885;
-margin: 15% auto; /* 15% from the top and centered */
-padding: 10px;
-border: 1px solid #888;
-height: 30em;
-width: 20em; /* Could be more or less, depending on screen size */
+    background-color: #2F2885;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    height: 30em;
+    width: 20em; /* Could be more or less, depending on screen size */
+    border-radius: 15px;
 }
   
 .modal-content p{
@@ -129,17 +130,17 @@ width: 20em; /* Could be more or less, depending on screen size */
 
 /* The Close Button */
 .close {
-color: #fafafa;
-float: right;
-font-size: 28px;
-font-weight: bold;
+    color: #fafafa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
   
-.close:hover,
+.close:hover, 
 .close:focus {
-color: black;
-text-decoration: none;
-cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 } 
 
 /* arrow!!! */
@@ -199,7 +200,7 @@ div.arrow {
     height: 6vmin;
     box-sizing: border-box;
     position: absolute;
-    left: 50%;
+    left: 48.5%;
     top: 90%;
     transform: rotate(135deg);
 }
@@ -237,6 +238,18 @@ div.arrow:hover::before {
     transform: scale(0.8);
 }
 
+
+.begin_cont {
+    display: flex;
+    justify-content: center;
+    margin-top: 40rem;
+}
+
+.begin {
+    font-size: 2rem;
+    color: #fafafa;
+
+}
 
 /* first instance of the black parts  */
 
