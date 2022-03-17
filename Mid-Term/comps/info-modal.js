@@ -1,11 +1,11 @@
-var modalparent = document.getElementsByClassName("modal_multi");
+var modalparent = document.getElementsByClassName("modal_info");
 
         // Get the button that opens the modal
 
-        var modal_btn_multi = document.getElementsByClassName("part1");
+        var modal_btn_multi = document.getElementsByClassName("info");
 
         // Get the <span> element that closes the modal
-        var span_close_multi = document.getElementsByClassName("close_multi");
+        var span_close_multi = document.getElementsByClassName("close_info");
 
         // When the user clicks the button, open the modal
         function setDataIndex() {

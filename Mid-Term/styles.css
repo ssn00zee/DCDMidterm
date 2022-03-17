@@ -40,6 +40,8 @@ body {
     
 }
 
+
+
 /* green and red particles */
 
 /* .particle_container {
@@ -56,6 +58,7 @@ body {
     margin: 3rem;
     transition: transform 250ms;
 }
+
 
 .part1:hover{
     background-color: #037400;
@@ -96,6 +99,54 @@ body {
 
 /* info modal */
 
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #2F2885;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    height: 30em;
+    width: 20em; /* Could be more or less, depending on screen size */
+    border-radius: 15px;
+}
+  
+.modal-content p{
+    color: #fafafa;
+    margin-top: 50%;
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+/* The Close Button */
+.close {
+    color: #fafafa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, 
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+/* Modal - Info Box */
 .modal {
     display: none; /* Hidden by default */
     position: absolute; /* Stay in place */
@@ -255,4 +306,47 @@ div.arrow:hover::before {
 
 .partscont {
     margin-top: 40rem;
+}
+
+.partscont#second {
+margin: 0;
+}
+
+.partscont#third {
+margin: 0;
+}
+
+.partscont#fourth {
+margin: 0;
+}
+
+.partscont#fifth {
+margin: 0;
+}
+
+.partscont#sixth {
+margin: 0;
+}
+
+.partscont#seventh {
+margin: 0;
+}
+
+.partscont#eighth {
+margin: 0;
+}
+
+.partscont#ninth {
+margin: 0;
+}
+
+.text_cont {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.text1 {
+    font-size: 2rem;
+    color: #fafafa;
 }

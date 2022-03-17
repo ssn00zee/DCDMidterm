@@ -18,7 +18,18 @@ template_bpart.innerHTML = `
     border-radius: 50%;
     margin: 1rem;
     flex-shrink: 0;
+    z-index: -1;
 }
+
+// .bpart#green {
+//     width: 50px;
+//     height: 50px;
+//     background: #00C637;
+//     border-radius: 50%;
+//     margin: 1rem;
+//     flex-shrink: 0;
+//     z-index: -1;
+// }
 
 </style>
 
@@ -50,6 +61,8 @@ class TheBPart extends HTMLElement {
     //MUST HAVE - FUNCTION THAT RUNS AFTER IT'S CONNECTED
     connectedCallback(){
         this.shadowRoot.appendChild(template_bpart.content.cloneNode(true)); //use the template to make a clone
+        this.shador
+   
     }
 
     //To-do - CREATE THE FUNCTIONALITIES HERE!
