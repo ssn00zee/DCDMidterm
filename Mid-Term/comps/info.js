@@ -15,6 +15,31 @@ template_info.innerHTML = `
     z-index; 5;
     position: absolute;
     animation: fade 0.5s ease-in-out forwards;
+    justify-content: center;
+}
+
+.content {
+    height: 15em;
+    width: 18em;
+    background-color: white;
+    margin-top: 2em;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.calorie {
+    border: 0.2rem solid white;
+    border-radius: 10px;
+    width: 10em;
+    height: 2em;
+}
+
+.name {
+    border: 0.2rem solid white;
+    border-radius: 10px;
+    width: 10em;
+    height: 2em;
 }
 
 .green_btn {
@@ -56,6 +81,14 @@ template_info.innerHTML = `
 
 <div class='info_cont'>
     <div class='info' id='here'>
+        <div class='content'>
+        </div>
+        <div class='calname_cont'>
+            <div class='calorie'>
+            </div>
+            <div class='name'>
+            </div>
+        </div>
     </div> 
 </div>
 
