@@ -7,6 +7,10 @@ template_info.innerHTML = `
 
 .info {
     display: none;
+    grid-template-columns: 1fr 2fr 0 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px; 
     background-color: #2F2885;
     border: 1px solid #888;
     height: 30em;
@@ -19,27 +23,34 @@ template_info.innerHTML = `
 }
 
 .content {
+    grid-area: 1 / 1 / 3 / 5;
     height: 15em;
     width: 18em;
     background-color: white;
     margin-top: 2em;
+    margin-left: 1em;
     border-radius: 15px;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    // align-items: flex-end;
 }
 
 .calorie {
+    grid-area: 3 / 1 / 4 / 2;
     border: 0.2rem solid white;
     border-radius: 10px;
-    width: 10em;
+    width: 8em;
     height: 2em;
+    margin-left: 1em;
 }
 
 .name {
+    grid-area: 3 / 4 / 4 / 5;
     border: 0.2rem solid white;
     border-radius: 10px;
-    width: 10em;
+    width: 8em;
     height: 2em;
+    margin-right: 1em;
 }
 
 .green_btn {
@@ -77,19 +88,22 @@ template_info.innerHTML = `
     flex-wrap: wrap;
 }
 
+// .calname_cont {
+//     display: flex;
+// }
+
 </style>
 
 <div class='info_cont'>
     <div class='info' id='here'>
         <div class='content'>
         </div>
-        <div class='calname_cont'>
-            <div class='calorie'>
-            </div>
-            <div class='name'>
-            </div>
+        <div class='calorie'>
+        </div>
+        <div class='name'>
         </div>
     </div> 
+    
 </div>
 
 
@@ -135,7 +149,7 @@ class TheInfo extends HTMLElement {
     
     showInfo() {
         this.shadowRoot.querySelector(".info").style.cssText = `
-        display: flex;
+        display: grid;
         `
     }
 
