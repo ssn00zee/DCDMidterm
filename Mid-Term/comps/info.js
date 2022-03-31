@@ -38,10 +38,14 @@ template_info.innerHTML = `
 .calorie {
     grid-area: 3 / 1 / 4 / 2;
     border: 0.2rem solid white;
+    color: white;
     border-radius: 10px;
     width: 8em;
     height: 2em;
     margin-left: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .name {
@@ -51,6 +55,10 @@ template_info.innerHTML = `
     width: 8em;
     height: 2em;
     margin-right: 1em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .green_btn {
@@ -98,9 +106,9 @@ template_info.innerHTML = `
     <div class='info' id='here'>
         <div class='content'>
         </div>
-        <div class='calorie'>
+        <div class='calorie'>555
         </div>
-        <div class='name'>
+        <div class='name'>Fruit
         </div>
     </div> 
     
